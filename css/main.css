@@ -80,3 +80,39 @@ header .inner .contact {
   float: right;
   margin-top: 10px;
 }
+
+/* contents */
+.contents {
+  background: #fff;
+}
+
+.contents .visual {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+}
+/*object-fit : img나 video등의 콘텐츠크기 맞추는 방식
+cover는 가로 세로비를 유지하면서 요소콘텐츠박스를 가득채움, 가로세로비가 맞지 않을 경우 객체일부가 잘려나감*/
+.contents .visual .waves {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contents .visual .title {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 70px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
