@@ -2,18 +2,105 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Nanum+Myeongjo&display=swap'); */
 
 /*reset*/
-*{padding: 0; margin: 0;}
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
-h1, h2, h3, h4, h5, h6 {font-weight: 700; font-size: inherit;}
-a {color:inherit; text-decoration: none;}
-img {vertical-align: middle;}
-a img {border: none;}
-li {list-style: none;}
-address, em, i {font-style: normal;}
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-size: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+li {
+  list-style: none;
+}
+address,
+em,
+i {
+  font-style: normal;
+}
 
 /* font-family: 'Montserrat', sans-serif; */
 body {
-  font-family: 'Nanum Myeongjo', serif;
+  font-family: "Nanum Myeongjo", serif;
   font-size: 14px;
   color: #333;
 }
@@ -32,7 +119,7 @@ header {
   background: #213135;
   padding: 40px 0 25px;
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -68,11 +155,11 @@ header .inner .gnbBtn span {
 }
 
 header .inner .gnbBtn span.a {
-  top:0;
+  top: 0;
 }
 
 header .inner .gnbBtn span.b {
-  bottom:0;
+  bottom: 0;
 }
 
 header .inner .contact {
@@ -90,7 +177,6 @@ header .inner .contact {
   width: 100vw;
   height: 100vh;
   position: relative;
-
 }
 /*object-fit : img나 video등의 콘텐츠크기 맞추는 방식
 cover는 가로 세로비를 유지하면서 요소콘텐츠박스를 가득채움, 가로세로비가 맞지 않을 경우 객체일부가 잘려나감*/
@@ -110,10 +196,10 @@ cover는 가로 세로비를 유지하면서 요소콘텐츠박스를 가득채�
   left: 0;
   transform: translateY(-50%);
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   font-size: 70px;
-  text-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 /* section.about */
@@ -122,43 +208,96 @@ section.about {
   padding: 100px 0;
 }
 
-section.about .inner {
+section.about .inner .text p {
+  font-size: 45px;
+}
+
+/*.inner => 전체 레이아웃 넓이 공통 부분*/
+.inner {
   width: 1400px;
   margin: 0 auto;
 }
-
-section.about .inner .text .title {
-  font-family: 'Montserrat', sans-serif;
+/*.text => 텍스트 공통 */
+.text .title {
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-section.about .inner .text p {
-  font-size: 45px;
+.text p {
+  font-size: 35px;
   line-height: 1.2;
   margin: 40px 0;
 }
 
-section.about .inner .text a {
+.text a {
   display: inline-block;
   padding: 5px 15px;
   border: 1px solid #333;
   border-radius: 20px;
   font-size: 12px;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
   transition: all 0.2s;
 }
-
-section.about .inner .text a:hover, section.about .inner .text a:focus {
+.text a:hover,
+.text a:focus {
   border: 1px solid transparent;
   border-bottom: 1px solid #333;
   border-radius: 0;
   padding: 5px 18px;
-  transition: all 0.2;
+  transition: all 0.2s;
   background: #f2f0eb;
+}
+
+/* section.approach */
+section.approach {
+  padding: 100px 0;
+}
+
+section.approach .inner {
+  position: relative;
+}
+
+section.approach .inner .list {
+  width: 48%;
+}
+
+section.approach .inner .list li {
+  margin-bottom: 30px;
+}
+section.approach .inner .list li:last-child {
+  margin-bottom: 0;
+}
+section.approach .inner .list li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+section.approach .inner .list li a img {
+  width: 100%;
+}
+section.approach .inner .fix {
+  position: absolute;
+  width: 45%;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+
+section.approach .inner .fix .text {
+  position: absolute;
+  bottom: 0;
+}
+
+section.approach .inner .fix .text.on {
+  position: fixed;
+  bottom: 50%;
+  transform: translateY(50%);
 }
